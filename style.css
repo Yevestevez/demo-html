@@ -2,7 +2,21 @@
     box-sizing: border-box;
 }
 body {
-    background-color: greenyellow;
+    background-color: rgb(209, 200, 252);
     font-family: 'noto', Arial, sans-serif;
-    margin: 0;
+    margin: 4vh;
+}
+h1 {
+    font-size: 64px;
+    font-weight: bolder;
+    color: blueviolet;
+}
+img {
+    border-radius: 10%;
+}
+a {
+    padding: 1rem;
+}
+li {
+    padding: 1rem;
 }

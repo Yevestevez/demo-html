@@ -1,46 +1,127 @@
-<!-- HTML -> H T M L -->
-<!-- HyperText -> Enlaces -->
-<!-- Markup Language -> Lenguaje de marcado, define la ESTRUCTURA de un documento -->
-<!-- Otros lenguajes de marcado -> XML, JSON, MarkDown (.md) -->
-
-<!-- CSS -> Cascade Style Sheet: Define la apariencia de un documento -->
-<!-- JavaScript -> Define el comportamiento de un documento -->
-
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Demo-HTML</title>
-
-        <!-- favicon -->
-        <link rel="shortcut icon" href="./choc-32x32.svg" type="image/svg" />
-
-        <!-- css -->
+        <meta
+            name="description"
+            content="Ejemplo de portfolio HTML para el curso DATW 2026"
+        />
+        <title>Ejemplo HTML portfolio</title>
+        <link rel="shortcut icon" href="choc-32x32.svg" type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
-
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
     </head>
+
     <body>
-        <h1>¡Hola Mundo 🌍!</h1>
-        <ul>
-            <li>uno</li>
-            <li>dos</li>
-            <li>tres</li>
-        </ul>
-        <div>
-            <a href="https://www.google.es">google</a>
-        </div>
-        <img
-            src="./web.webp"
-            alt="Representación simbólica de una web"
-            width="420"
-        />
+        <header>
+            <hgroup>
+                <h1>Portfolio de PepeDev</h1>
+                <p>Desarrollador web full-stack (MERN)</p>
+            </hgroup>
+        </header>
+
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#presentation">Presentación</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <section id="presentation" aria-label="Información personal">
+                <hgroup>
+                    <h2>Presentación</h2>
+                    <p>PepeDev hace las mejores webs</p>
+                </hgroup>
+                <img
+                    width="300"
+                    src="./img/pepedev-cover.jpg"
+                    alt="Ilustración de un desarrollador web trabajando"
+                />
+            </section>
+
+            <section id="projects">
+                <h2>Proyectos</h2>
+                <ul>
+                    <li>
+                        <article>
+                            <header>
+                                <h3>MegaGuay App</h3>
+                                <span
+                                    >Descripción breve de lo guay que es la app
+                                    ¡muy guay!</span
+                                >
+                            </header>
+                            <img
+                                src="./img/megaguay-app.jpg"
+                                alt="Ilustración de una mano sujetando un smartphone con una app de la que salen notificaciones"
+                                width="120"
+                            />
+                            <p lang="zxx">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempora repudiandae ab iure
+                                sequi consequatur illo, provident cumque libero
+                                nisi nesciunt pariatur ipsa, sit doloremque
+                                ipsam! Dolores, neque eligendi! Laboriosam,
+                                earum.
+                            </p>
+
+                            <footer>
+                                <a href="">Enlace a MegaGuayApp</a>
+                                <span>html · css · js · react</span>
+                            </footer>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header>
+                                <h3>SuperApp</h3>
+                                <span>Descripción breve de la SuperApp</span>
+                            </header>
+                            <img
+                                src="./img/megaguay-app.jpg"
+                                alt="Ilustración de una mano sujetando un smartphone con una app de la que salen notificaciones"
+                                width="120"
+                            />
+                            <p lang="zxx">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tempora repudiandae ab iure
+                                sequi consequatur illo, provident cumque libero
+                                nisi nesciunt pariatur ipsa, sit doloremque
+                                ipsam! Dolores, neque eligendi! Laboriosam,
+                                earum.
+                            </p>
+
+                            <footer>
+                                <a href="">Enlace a SuperApp</a>
+                                <span>html · css · js · angular · node</span>
+                            </footer>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contacto</h2>
+                <p lang="zxx">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis mollitia velit asperiores nostrum eius ducimus, quos
+                    labore quia magnam corrupti tempora odit enim
+                    exercitationem, ratione nemo cumque blanditiis culpa nisi!
+                </p>
+                <a href="">¡Contacta conmigo en Linkedin</a>
+            </section>
+
+            <aside><span>Información adicional a la página</span></aside>
+        </main>
+
+        <footer>
+            <p>&copy; 2026. Ejemplo de footer de una web</p>
+            <address>
+                <a href="mailto:pepedev@pepe.dev">PepeMail</a>
+                <p>Información de contacto de Pepe</p>
+            </address>
+        </footer>
     </body>
 </html>
